@@ -12,8 +12,7 @@
 - composer install
 - cp .env.example .env ,環境変数を適宜変更
 - php artisan key:generate
-- php artisan migrate
-- php artisan db:seed
+- php artisan migrate:fresh --seed
 
 ### 権限について
 クローン後、以下のコマンドで権限を設定してください
