@@ -84,15 +84,15 @@
                     @if ($contacts->onFirstPage())
                         <span class="page-button disabled">&lt;</span>
                     @else
-                        <a href="{{ $contacts->previousPageUrl() }}" class="page-button">&lt;</a>
+                        <a href="{{ $contacts->appends(request()->query())->previousPageUrl() }}" class="page-button">&lt;</a>
                     @endif
 
-                    @foreach ($contacts->getUrlRange(1, $contacts->lastPage()) as $page => $url)
+                    @foreach ($contacts->appends(request()->query())->getUrlRange(1, $contacts->lastPage()) as $page => $url)
                         <a href="{{ $url }}" class="page-button {{ $page == $contacts->currentPage() ? 'active' : '' }}">{{ $page }}</a>
                     @endforeach
 
                     @if ($contacts->hasMorePages())
-                        <a href="{{ $contacts->nextPageUrl() }}" class="page-button">&gt;</a>
+                        <a href="{{ $contacts->appends(request()->query())->nextPageUrl() }}" class="page-button">&gt;</a>
                     @else
                         <span class="page-button disabled">&gt;</span>
                     @endif
