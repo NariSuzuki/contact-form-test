@@ -15,6 +15,11 @@
 - php artisan migrate
 - php artisan db:seed
 
+### 権限について
+クローン後、以下のコマンドで権限を設定してください
+- docker-compose exec php chmod -R 775 storage bootstrap/cache
+- docker-compose exec php chown -R www-data:www-data storage bootstrap/cache
+
 ## 開発環境
 - お問合せ画面：http://localhost/
 - ユーザー登録：http://localhost/register
