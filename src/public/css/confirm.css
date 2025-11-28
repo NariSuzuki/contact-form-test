@@ -1,0 +1,104 @@
+.confirm__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.confirm__heading {
+    color: #938373;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.confirm__heading h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.confirm-table {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.confirm-table__inner {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e0e0e0;
+}
+
+.confirm-table__row {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.confirm-table__row:last-child {
+    border-bottom: none;
+}
+
+.confirm-table__header {
+    background-color: #c9b8a8;
+    color: #ffffff;
+    padding: 20px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: normal;
+    width: 35%;
+    vertical-align: top;
+    border-right: 1px solid #e0e0e0;
+}
+
+.confirm-table__text {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.confirm-table__text input,
+.confirm-table__text textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #938373;
+    font-size: 16px;
+    padding: 0;
+    outline: none;
+    font-family: "Inika", serif;
+    line-height: 1.6;
+}
+
+.confirm-table__text textarea {
+    resize: none;
+    min-height: 60px;
+}
+
+.form__button {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form__button-submit {
+    padding: 10px 50px;
+    border: none;
+    background: #8b796d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form__button-back {
+    padding: 10px 50px;
+    border: none;
+    background: transparent;
+    color: #8b796d;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+}

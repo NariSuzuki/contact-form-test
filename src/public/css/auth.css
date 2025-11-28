@@ -1,0 +1,147 @@
+.header {
+    text-align: center;
+    border-bottom: 1px solid #f8f8f8;
+    background-color: #fff;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    color: #938373;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 30px;
+    margin: 0 auto;
+    position: relative;
+    left: 50px;
+
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__link {
+    color: #ddd0c6;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 1px solid #ddd0c6;
+    border-radius: 3px;
+    background: #f4f4f4;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header__link:hover {
+    background-color: #938373;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inika", serif;
+    background-color: #f5f5f5;
+    ;
+}
+
+main {
+    min-height: calc(100vh - 80px);
+}
+
+
+body {
+    background-color: #f0ebe5;
+}
+
+.auth-container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.auth-heading {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-heading h2 {
+    color: #938373;
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.auth-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-family: sans-serif;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    font-family: "Inika", serif;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    font-size: 14px;
+    box-sizing: border-box;
+
+}
+
+.form-group input::placeholder {
+    color: #a9a9a9;
+}
+
+.form-group input:focus {
+    outline: none;
+    background-color: #ebebeb;
+}
+
+.error {
+    display: block;
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.form-button {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.auth-button {
+    width: 30%;
+    padding: 10px;
+    background-color: #8b796d;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

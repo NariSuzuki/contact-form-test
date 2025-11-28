@@ -1,0 +1,225 @@
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    color: #938373;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-form__heading h2 {
+    font-weight: normal;
+}
+
+.form {
+    color: #938373;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    text-align: left;
+}
+
+.form__group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-bottom: 0px;
+}
+
+.form__group-title {
+    width: 40%;
+    padding-top: 10px;
+    font-family: sans-serif;
+}
+
+.form__group-content {
+    width: 60%;
+}
+
+.form__label--required {
+    margin-left: 5px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    color: #ff0000;
+}
+
+.form__error {
+    min-height: 20px;
+    color: #ff0000;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.form__group-content .form__error span {
+    display: block;
+    margin-top: 2px;
+}
+
+.form__input--name .form__error {
+    min-height: 20px;
+}
+
+.form__group-content--name {
+    display: flex;
+    gap: 40px;
+}
+
+.form__input--name input::placeholder,
+.form__input--text input::placeholder,
+.form__input--tel input::placeholder,
+.form__input--textarea textarea::placeholder,
+.form__input--select select {
+    color: #a9a9a9;
+    opacity: 1;
+    font-family: "Inika", serif;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    appearance: none;
+    box-sizing: border-box;
+}
+
+.form__input--name input,
+.form__input--tel input,
+.form__input--select select {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+}
+
+.form__input--name input,
+.form__input--text input,
+.form__input--tel input {
+    height: 40px;
+}
+
+.form__input--name {
+    flex: 1;
+    max-width: calc(50% - 5px);
+}
+
+.form__input--radio {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.form__input--radio input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #8b796d;
+    border-radius: 50%;
+    position: relative;
+    top: 1px;
+    margin-right: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.form__input--radio input[type="radio"]:first-of-type {
+    margin-left: 0;
+}
+
+.form__input--radio input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #8b796d;
+}
+
+.form__input--radio label {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.form__group-content--tel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form__group-content--tel .form__input--tel {
+    flex: 1;
+    max-width: calc(33.333% - 7px);
+}
+
+.tel-separator {
+    font-size: 16px;
+    color: #a9a9a9;
+    align-self: center;
+}
+
+.form__input--select {
+    position: relative;
+    height: 48px;
+    max-width: 250px;
+}
+
+.form__input--select::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #938373;
+    pointer-events: none;
+}
+
+.form__input--select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+}
+
+
+.form__input--textarea textarea {
+    height: 100px;
+}
+
+.form__button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form__button-submit {
+    padding: 10px 30px;
+    width: auto;
+    border: none;
+    background: #8b796d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
